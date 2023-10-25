@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:pink;">
+
+<h1>QUOTES!</h1>
+<p>put a quote and do not COPy!</p>
+<img height=50 src="https://cdn.bargainballoons.com/products/2019-2019-New-Balloons-Images/Red-smiley-face-latex-balloons.jpg" />
+<p> BY SOLOMON (phoebe typed) </p>
+
+<p>Enter a quote here!!: <form method="POST"><label>quote:<input name="quote" /></label><br/><label>name:<input name="name" /></label><br/><input type="submit" /></form></p>
+<p> {{ error }} </p>
+
+<p>Previous quotes: </p>
+<p>{% for quote in quotes %} <p> "{{ quote.quote }}" by: {{ quote.name }} </p> {% endfor %}</p> <!-- version of sqlalchemy  -->
+
+
+<p></p>
+<p> <form method="POST" action="/clear"> Clear quotes: <input type="submit" value="Clear"/></form></p>
+
+</body>
+</html>
